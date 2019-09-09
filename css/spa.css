@@ -1,0 +1,166 @@
+
+.article__panel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0!important;
+}
+.article__panel *{
+    box-sizing: border-box;
+}
+.wizards_Class{
+    background-image: url(../images/bg.png);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/*Close button*/
+.wizards-yamaha__link {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 208px;
+    margin: 0!important
+}
+.wizards-yamaha__icon {
+    position: absolute;
+    bottom: 51px;
+    right: 5px;
+    background: url(../images/wizards-info.svg) no-repeat;
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    -webkit-animation: fadeIn24 1s .4s both;
+    animation: fadeIn24 1s .4s both;
+    cursor: pointer;
+    margin: 0!important;
+    z-index: 1
+}
+.wizards-yamaha__close {
+    position: absolute;
+    bottom: 80px;
+    right: 5px;
+    background: url(../images/wizards-close.svg) no-repeat;
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    -webkit-animation: fadeIn24 1s .4s both;
+    animation: fadeIn24 1s .4s both;
+    cursor: pointer;
+    margin: 0!important;
+    z-index: 1
+}
+/*Close button*/
+.wizards_Class,.slide_1,.slide_2 {
+    width: 100%;
+    height: 110px;
+}
+.image_1_1,
+.logo_1_1,
+.logo_1_2,
+.logo_1_3,
+.slide_1,
+.slide_2,
+.text_1_1 {
+    position: absolute;
+}
+.image_1_1{
+    left: 125px;
+    bottom: 10px;
+}
+.logo_1_2{
+    left: -18px;
+    bottom: 20px;
+}
+.logo_1_1{
+    right: 0px;
+    bottom: 38px;
+}
+.logo_1_3 img, .image_1_1 img,.image_2_1 img,.text_1_1 img {
+    width: 100%;
+}
+.text_1_1{
+    z-index: 1;
+}
+.logo_1_3{
+	height: 100%;
+}
+.countDown{
+    position: absolute;
+    right: 19%;
+    bottom: 35%;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #fff;
+    z-index: 999;
+} 
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+}
+
+@keyframes fadeInZoom {
+    from {
+        opacity: 0;
+        transform: scale3d(1.3, 1.3, 1.3);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0
+    }
+}
+@keyframes animatedBg {
+  to {
+    	background-position: -11px 0px; 
+	} 
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: .3s;
+    animation-fill-mode: both
+}
+
+.animatedBg {
+    animation-name: animatedBg;
+    animation-duration: .9s;
+    animation-fill-mode: both
+}
+
+.fadeInUp,
+.fadeInZoom {
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+.fadeInZoom {
+    animation-name: fadeInZoom;
+}
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+.fadeOut {
+    animation-name: fadeOut;
+    animation-duration: .3s;
+    animation-fill-mode: both
+}
+.hidden{
+    display: none;
+}

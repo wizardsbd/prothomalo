@@ -1,0 +1,250 @@
+
+
+.wizards-modal-info {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(9, 6, 6, .5);
+	z-index: 1000;
+	display: none;
+	box-sizing: border-box;
+	overflow-y: auto;
+	text-align: left;
+	visibility: visible!important
+}
+
+.wizards-modal-info * {
+	box-sizing: border-box
+}
+
+.wizards-modal-info__window {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 600px;
+	padding: 27px 37px 60px;
+	background: #fff;
+	border-radius: 4px;
+	overflow-y: auto
+}
+
+.wizards-modal-info_xs .wizards-modal-info__window {
+	width: 300px;
+	padding: 14px 16px 30px;
+	top: 10%;
+	-webkit-transform: translate(-50%, 0);
+	transform: translate(-50%, 0)
+}
+
+.wizards-modal-info__close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	padding: 0;
+	width: 24px;
+	height: 24px;
+	background: 0 0;
+	border: none;
+	box-shadow: none;
+	cursor: pointer
+}
+
+.wizards-modal-info_xs .wizards-modal-info__close {
+	top: 8px;
+	right: 8px
+}
+
+.wizards-modal-info__close:hover {
+	opacity: .8
+}
+
+.wizards-modal-info__close:before,
+.wizards-modal-info__close:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 9px;
+	bottom: 0;
+	width: 2px;
+	background: #aaa
+}
+
+.wizards-modal-info__close:before {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+
+.wizards-modal-info__close:after {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg)
+}
+
+.wizards-modal-info__logo {
+	display: block!important;
+	position: static!important;
+	background: url(../images/wizardslogo.png) no-repeat;
+	background-size: contain;
+	width: 152px;
+	height: 35px;
+	text-decoration: none
+}
+
+.wizards-modal-info__text {
+	margin-top: 30px;
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #000;
+	padding: 0 5px;
+	max-width: 520px
+}
+
+.wizards-modal-info__text p {
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol
+}
+
+.wizards-modal-info_xs .wizards-modal-info__text {
+	margin-top: 15px
+}
+
+.wizards-modal-info__text a {
+	display: inline!important;
+	color: #027bff!important;
+	text-decoration: none
+}
+
+.wizards-modal-info__text a:hover {
+	color: #027bff!important;
+	text-decoration: underline
+}
+
+.wizards-modal-info__text p {
+	margin: 0
+}
+
+.wizards-modal-info__text p+p {
+	margin-top: 12px
+}
+
+.post-feat-text {
+	display: none
+}
+
+a.wizards-link:hover {
+	background: 0 0
+}
+
+.wizards-feedback {
+	position: absolute;
+	bottom: 75px;
+	right: 40px;
+	background: #fff;
+	border-radius: 5px;
+	margin: 0!important;
+	padding: 0;
+	list-style: none;
+	overflow: visible!important;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity .3s, visibility .3s;
+	transition: opacity .3s, visibility .3s
+}
+
+.wizards-feedback * {
+	box-sizing: border-box
+}
+
+.wizards-feedback--vis {
+	opacity: 1!important;
+	visibility: visible!important
+}
+
+.wizards-feedback:after {
+	content: '';
+	position: absolute;
+	bottom: 11px;
+	right: -7px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5px 0 5px 7px;
+	border-color: transparent transparent transparent #fff
+}
+
+.wizards-feedback__item {
+	display: block!important;
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+	font-size: 12px!important;
+	line-height: 12px!important;
+	color: #000!important;
+	padding: 8px 9px;
+	margin: 0!important;
+	border-bottom: 1px solid rgba(0, 0, 0, .13);
+	cursor: pointer
+}
+
+.wizards-feedback__item:hover {
+	color: #0075ff!important
+}
+
+.wizards-feedback__item:last-child {
+	border-bottom: none
+}
+
+.wizards--move>[class*=wizards] {
+	-webkit-animation: moveDownMdLg .5s both;
+	animation: moveDownMdLg .5s both
+}
+
+.wizards-sm.wizards--move>[class*=wizards] {
+	-webkit-animation: moveDownSm .5s both;
+	animation: moveDownSm .5s both
+}
+
+@-webkit-keyframes moveDownSm {
+	to {
+		-webkit-transform: translateY(40px);
+		transform: translateY(40px)
+	}
+}
+
+@keyframes moveDownSm {
+	to {
+		-webkit-transform: translateY(40px);
+		transform: translateY(40px)
+	}
+}
+
+@-webkit-keyframes moveDownMdLg {
+	to {
+		-webkit-transform: translateY(70px);
+		transform: translateY(70px)
+	}
+}
+
+@keyframes moveDownMdLg {
+	to {
+		-webkit-transform: translateY(70px);
+		transform: translateY(70px)
+	}
+}
+
+.wizards-feedback--sm {
+	right: 35px;
+	bottom: 42px
+}
+
+.wizards-feedback--sm:after {
+	bottom: 4px
+}
+
+.wizards-feedback--sm .wizards-feedback__item {
+	font-size: 13px!important;
+	line-height: 13px!important;
+	padding: 11px 13px
+}
